@@ -1,0 +1,14 @@
+a=imread('C:\Users\user\Desktop\Test_images\lena.bmp');
+subplot(1,3,1);
+imshow(a);
+title('1');
+b=rgb2gray(a);
+subplot(1,3,2)
+imshow(b);
+title('2');
+g=256-a;
+c=im2bw(a)
+g=256-c;
+subplot(1,3,3)
+imshow(g);
+title('3');
